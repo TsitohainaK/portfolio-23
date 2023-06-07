@@ -27,7 +27,7 @@ function Home({}: Props) {
               applications that exceed expectations.
             </div>
             <div className="pl-10">
-              Javascript, Typescript are my go-to language
+              Javascript, Typescript are my go-to languages
               <br />
               I use ReactJs as front-end framework
               <br />
