@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --link-color: #0f0f0f;
+  /* --link-hover: rgb(52 211 153); */
+  /* --link-active: rgb(16 185 129); */
+
+  --color-main: rgb(245 158 11);
+
+  --root-bg: #f2f2f2;
+  --root-color: #010101;
+
+  --content-bg: rgb(254, 254, 254);
+  --content-bg-emphasis: rgb(196, 196, 196);
+  --content-bg-hover: rgb(230, 230, 230);
+
+  color-scheme: light;
+
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  display: block;
+  background-color: var(--root-bg);
+  width: 10px;
+  border-radius: 120px;
+}
+
+::-webkit-scrollbar:hover {
+  background-color: var(--content-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  display: block;
+  background-color: var(--content-bg);
+  border-radius: 120px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--content-bg-emphasis);
+}
+
+:root {
+  font-family: Helvetica, Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: var(--root-color);
+  background-color: var(--root-bg);
+
+  scroll-behavior: smooth;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --webkit-text-size-adjust: 100%;
+}
+
+:root.light {
+  --link-color: #0f0f0f;
+  /* --link-hover: rgb(52 211 153); */
+  /* --link-active: rgb(16 185 129); */
+
+  --root-bg: #f2f2f2;
+  --root-color: #010101;
+
+  --content-bg: rgb(254, 254, 254);
+  --content-bg-emphasis: rgb(196, 196, 196);
+  --content-bg-hover: rgb(230, 230, 230);
+
+  color-scheme: light;
+}
+
+:root.dark {
+  --link-color: white;
+  /* --link-hover: rgb(52 211 153); */
+  /* --link-active: rgb(16 185 129); */
+
+  --root-bg: #2f2f2f;
+  --root-color: #efefef;
+
+  --content-bg: rgba(30, 41, 59);
+  --content-bg-emphasis: rgb(15 23 42);
+  --content-bg-hover: rgb(32, 43, 62);
+
+  color-scheme: dark;
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+a.active {
+  color: var(--link-active);
+  @apply font-medium;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --link-color: white;
+    --link-hover: rgb(52 211 153);
+    --link-active: rgb(16 185 129);
+
+    --color-main: rgb(16 185 129);
+
+    --root-bg: #2f2f2f;
+    --root-color: #efefef;
+
+    --content-bg: rgba(30, 41, 59);
+    --content-bg-emphasis: rgb(15 23 42);
+    --content-bg-hover: rgb(32, 43, 62);
+
+    color-scheme: dark;
+  }
+}
+
+.animate-hide {
+  opacity: 0;
+  transform: translateX(200%);
+  transition: all 1s;
+}
+
+.animate-show {
+  opacity: 1;
+  transition: all 1s;
+  transform: translateX(0);
+}
