@@ -16,7 +16,7 @@ function Home({}: Props) {
       <main className="flex gap-4 p-4 px-3 w-full h-[calc(100vh-3.3rem)]">
         <section className="flex w-8/12 h-full justify-between items-start rounded-xl bg-[var(--content-bg)] p-4 flex-col">
           <div className="who | mt-16 flex flex-col gap-4">
-            <div className="text-5xl font-[Montserrat] font-bold italic pl-10 ">
+            <div className="text-5xl font-[Montserrat] font-bold italic pl-10 mb-4">
               Hey, I'm Tsitohaina,
               <br /> A javascript developper
             </div>
