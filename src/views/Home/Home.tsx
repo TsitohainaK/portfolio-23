@@ -54,7 +54,7 @@ function Home({}: Props) {
               </div>
               <div className="bg-[var(--root-color)] p-2 rounded-full">
                 <a
-                  href="http://github.com/TsitoUw"
+                  href="http://linkedin.com/tsitohaina-rakotoarimanana"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[var(--root-bg)] hover:text-[var(--root-bg)]"
@@ -64,7 +64,7 @@ function Home({}: Props) {
               </div>
               <div className="bg-[var(--root-color)] p-2 rounded-full">
                 <a
-                  href="http://github.com/TsitoUw"
+                  href="http://facebook.com/profile.php?id=100084120922933"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[var(--root-bg)] hover:text-[var(--root-bg)]"
@@ -74,7 +74,7 @@ function Home({}: Props) {
               </div>
               <div className="bg-[var(--root-color)] p-2 rounded-full">
                 <a
-                  href="http://github.com/TsitoUw"
+                  href="http://instagram.com/imanomalies"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[var(--root-bg)] hover:text-[var(--root-bg)]"
