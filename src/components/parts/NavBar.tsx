@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { toogleTheme } from "../../services/ThemeService";
-import { NavLink } from "react-router-dom";
 import { Code, DarkModeOutlined, LightModeOutlined } from "@mui/icons-material";
 
 const NavBar = () => {
@@ -9,25 +8,27 @@ const NavBar = () => {
   useEffect(() => {
     if (localStorage.getItem("theme") === null) {
       toogleTheme(setCurrentTheme, true);
+    } else {
+      toogleTheme(setCurrentTheme);
     }
   }, []);
   return (
-    <div className="pt-2">
-      <header className="navbar | p-2 px-4 flex justify-between items-center bg-[var(--content-bg)] rounded-full mx-2 shadow-md">
+    <div className="pt-2 px-1 fixed top-0 w-full z-50">
+      <header className="navbar | p-2 px-5 flex justify-between items-center rounded-full mx-2 shadow-md blured-content-bg">
         <div className="me | flex items-center justify-start gap-1">
           <div className="icon | flex items-center text-[var(--color-main)]">
             <Code fontSize="medium" />
           </div>
           <div className="name | flex items-center font-mono font-medium text-lg">
-            Tsitohaina
+            Tsitohaina<span className="hidden md:block ml-2">Kantonirina</span>
           </div>
         </div>
         <div className="link flex items-center gap-3">
           <div className="about">
-            <NavLink to="/">about</NavLink>
+            <a href="#me">about</a>
           </div>
           <div className="works">
-            <NavLink to="/">works</NavLink>
+            <a href="#projects">works</a>
           </div>
           <div className="switcher">
             <button

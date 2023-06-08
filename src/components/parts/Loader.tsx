@@ -1,10 +1,10 @@
-import GraphicEqIcon from '@mui/icons-material/GraphicEq'
+import { Code } from '@mui/icons-material'
 
 const Loader = () => {
   return (
     <div className='w-screen h-screen flex items-center justify-center'>
-      <div className="icon text-6xl text-rose-600 animate-pulse">
-        <GraphicEqIcon fontSize='inherit'/>
+      <div className="icon text-6xl text-[var(--color-main)] animate-pulse">
+        <Code fontSize='inherit'/>
       </div>
     </div>
   )

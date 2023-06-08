@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({ 
-      mode:'production',
+      mode:'development',
       minify:true,
       registerType: "autoUpdate",
       injectRegister: "auto",
@@ -16,11 +16,11 @@ export default defineConfig({
       },
       includeAssets: ["/icon.png", "/icons/apple-icon-180.png"],
       manifest:{
-        name:"Musicc",
-        short_name:"Musicc",
-        description:"Malagasy music streaming plateform",
+        name:"Tsitohaina Kantonirina",
+        short_name:"Portfolio",
+        description:"Tsitohaina's portfolio",
         theme_color: "#0f172a",
-        start_url: "/welcome",
+        start_url: "/",
         display: "standalone",
         lang:"en",
         icons: [

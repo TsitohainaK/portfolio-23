@@ -7,9 +7,15 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: color ease-out 0.2s;
+
 }
 
 :root {
+  scroll-behavior: smooth;
+
   --link-color: #0f0f0f;
   /* --link-hover: rgb(52 211 153); */
   /* --link-active: rgb(16 185 129); */
@@ -19,13 +25,17 @@
   --root-bg: #f2f2f2;
   --root-color: #010101;
 
-  --content-bg: rgb(254, 254, 254);
+  --tw-text-opacity: 1;
+  --content-bg: rgb(254 254 254);
+  --content-bg-tp: rgba(254, 254, 254, 200);
   --content-bg-emphasis: rgb(196, 196, 196);
   --content-bg-hover: rgb(230, 230, 230);
 
   color-scheme: light;
 
   scrollbar-width: thin;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 ::-webkit-scrollbar {
@@ -75,7 +85,8 @@
   --root-bg: #f2f2f2;
   --root-color: #010101;
 
-  --content-bg: rgb(254, 254, 254);
+  --tw-text-opacity: 1;
+  --content-bg: rgb(254 254 254);
   --content-bg-emphasis: rgb(196, 196, 196);
   --content-bg-hover: rgb(230, 230, 230);
 
@@ -91,6 +102,8 @@
   --root-color: #efefef;
 
   --content-bg: rgba(30, 41, 59);
+  --content-bg-tp: rgba(30, 41, 59, 200);
+
   --content-bg-emphasis: rgb(15 23 42);
   --content-bg-hover: rgb(32, 43, 62);
 
@@ -126,13 +139,66 @@ a.active {
 }
 
 .animate-hide {
-  opacity: 0;
-  transform: translateX(200%);
   transition: all 1s;
+  transform: translateX(-200%);
+  opacity: 0;
 }
 
 .animate-show {
+  /* animation: inin ease-in 1s; */
+  transition: all 0.5s;
   opacity: 1;
-  transition: all 1s;
-  transform: translateX(0);
+  /* transform: translateX(0); */
+}
+
+.animate-blur-in {
+  animation: blur-appear 2s ease;
+  opacity: 1;
+}
+
+@keyframes inin {
+  0% {
+    opacity: 0;
+    transform: translateX(-200%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes outout {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blur-appear {
+  0% {
+    opacity: 0;
+    filter: blur(10px);
+  }
+  50% {
+    filter: blur(5px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+
+.light .blured-content-bg {
+  background-color: rgb(254 254 254 / 0.75);
+  @apply backdrop-blur-lg;
+}
+.blured-content-bg {
+  background-color: rgb(254 254 254 / 0.75);
+  @apply backdrop-blur-lg;
+}
+.dark .blured-content-bg {
+  background-color: rgba(30, 41, 59, 0.75);
+  @apply backdrop-blur-lg;
 }
