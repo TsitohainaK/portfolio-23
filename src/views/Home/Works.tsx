@@ -52,12 +52,12 @@ Also lets admins manage the entire applications and its contents.`,
     },
     {
       name: "Mini Social Network",
-      imgSrc: "/minisn.png",
+      imgSrc: "/sma.png",
       desc: `Fullstack social network app made with ReactJs, Tailwind css, Nodejs , ExpressJs, Socket.io and MongoDb.
 My first medium size app, with this project I learnt a lots of thing in the developpement of a web app, from setting up the project, creating RESTful api, handling realtime event, to the deployement.`,
       links: {
-        project: "https://gihub.com/TsitoUw/mini-sn",
-        deployment: "https://TsitoUW.vercel.app",
+        project: "https://github.com/TsitoUw/sma-01-front",
+        deployment: "https://sma-01-front.vercel.app/register",
       },
       status: "rewrite",
     },
