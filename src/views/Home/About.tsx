@@ -1,6 +1,10 @@
 import me from "../../assets/me-lol.jpg";
 import {
+  Download,
+  DownloadOutlined,
   FacebookRounded,
+  FileDownload,
+  FileDownloadOutlined,
   GitHub,
   Instagram,
   LinkedIn,
@@ -46,7 +50,10 @@ function About({}: Props) {
               Also I'm an IT student at "Institut Superieur Polytechnique de
               Madagascar"
             </div>
-            <div className=" w-full flex items-center justify-start gap-2 md:gap-3 md:pl-4">
+            <div
+              className=" w-full flex items-center justify-start gap-2 md:gap-3 md:pl-4"
+              title="tsitohaina.pro@gmail.com"
+            >
               <a
                 href="mailto:tsitohaina.pro@gmail.com"
                 target="_blank"
@@ -89,14 +96,18 @@ function About({}: Props) {
                   <FacebookRounded fontSize="medium" />
                 </a>
               </div>
-              <div className="bg-[var(--root-color)] p-[0.65rem] rounded-full flex items-center justify-center">
+              <div
+                className="bg-[var(--root-color)] p-[0.65rem] rounded-full flex items-center justify-center"
+                title="Download my resume"
+              >
                 <a
-                  href="http://instagram.com/imanomalies"
+                  href="/CV-FullStack-JS-Tsitohaina Kantonirina_RAKOTOARIMANANA.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[var(--root-bg)] hover:text-[var(--root-bg)]"
+                  title="Download my resume"
                 >
-                  <Instagram fontSize="medium" />
+                  <FileDownloadOutlined fontSize="medium" />
                 </a>
               </div>
             </div>

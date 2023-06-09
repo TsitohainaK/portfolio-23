@@ -12,7 +12,7 @@ function Works({}: Props) {
       desc: `This portfolio was made with ReactTs, vite and the framework Tailwind css. And also a little cup of coffe.
 This is also a progressive web app, so it can work offline if needed.`,
       links: {
-        project: "https://gihub.com/TsitoUw/portfolio-23",
+        project: "https://github.com/TsitoUw/portfolio-23",
         deployment: "https://TsitoUW.vercel.app",
       },
       isLandscape: true,
@@ -25,19 +25,23 @@ This is also a progressive web app, so it can work offline if needed.`,
 I aimed to achieve implementing my own media streaming and uploading methods, and also handling advanced authentication.
 Exploring React, NodeJs and Typescript in depth.`,
       links: {
-        project: "https://gihub.com/TsitoUw/musicc-front",
+        project: "https://github.com/TsitoUw/musicc-front",
         deployment: "https://musicc.vercel.app",
       },
+      isLandscape: true,
+
     },
     {
       name: "Restaurant Management",
-      imgSrc: "/restau.png",
+      imgSrc: "/nestangular.webp",
       desc: `Collaborating for building of a restaurant management, this is a web app build with Angular, NestJs and Postgresql.
 I was participating in the database study and mainly focusing on the backend, setting up a RESTful api for the front end.`,
       links: {
-        project: "https://gihub.com/TsitoUw/portfolio-23",
+        project: "https://github.com/TsitoUw/nest-restau",
         deployment: "",
       },
+      isLandscape: true,
+
     },
     {
       name: "Internship - Webmapping",
@@ -49,6 +53,22 @@ Also lets admins manage the entire applications and its contents.`,
         deployment: "",
       },
       status: "done",
+      isLandscape: true,
+
+    },
+    {
+      name: "2D Game Engine",
+      imgSrc: "/engine.jpeg",
+      desc: `This is a 2D game framework built with TypeScript, following the Entity-Component-System (ECS) architecture and utilizing the Matter.js physics engine. 
+The framework enables the development of 2D games with realistic physics interactions.
+
+My first step in the programing world was through game-making, with the RPG Maker Vx Ace, I also learnt fundamentals of Unity3D. 
+Now I'm interested in writting one.`,
+      links: {
+        project: "https://github.com/TsitoUw/2d-game-framework",
+        deployment: "",
+      },
+      isLandscape: true,
     },
     {
       name: "Mini Social Network",
@@ -60,24 +80,10 @@ My first medium size app, with this project I learnt a lots of thing in the deve
         deployment: "https://sma-01-front.vercel.app/register",
       },
       status: "rewrite",
-    },
-    {
-      name: "2D Game Engine",
-      imgSrc: "/gameengine.png",
-      desc: `This is a 2D game framework built with TypeScript, following the Entity-Component-System (ECS) architecture and utilizing the Matter.js physics engine. 
-The framework enables the development of 2D games with realistic physics interactions.
-
-My first step in the programing world was through game-making, with the RPG Maker Vx Ace, I also learnt fundamentals of Unity3D. 
-Now I'm interested in writting one.`,
-      links: {
-        project: "https://gihub.com/TsitoUw/2d-game-framework",
-        deployment: "",
-      },
+      isLandscape: true,
     },
   ];
   return (
-    // <div className="songs grid grid-flow-row items-center justify-center grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-7 w-full py-2 gap-4">
-
     <>
     <div className="w-max flex gap-2 rounded-md p-2 text-sm justify-center bg-[var(--content-bg)]">
         <p className="flex items-center gap-1">
