@@ -28,7 +28,7 @@ const NavBar = () => {
             <a href="#me">about</a>
           </div>
           <div className="works">
-            <a href="#projects">works</a>
+            <a href="#projects">projects</a>
           </div>
           <div className="switcher">
             <button

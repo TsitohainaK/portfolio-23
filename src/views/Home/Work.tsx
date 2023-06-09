@@ -35,7 +35,7 @@ function Work({ project }: { project: IProject }) {
   }, [showHide]);
 
   return (
-    <div className="relative w-full p-2 flex flex-col bg-[var(--content-bg)] rounded-md h-full overflow-hidden shadow-lg">
+    <div className="relative w-full p-2 flex flex-col bg-[var(--content-bg)] rounded-md h-full overflow-hidden shadow-lg drop-shadow-md">
       <div className="name | text-[Montserrat] text-lg p-2 font-semibold flex items-center gap-1">
         <span
           className={`flex items-center ${

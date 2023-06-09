@@ -9,13 +9,13 @@ function Home({}: Props) {
   return (
     <div className="Home | relative w-full flex flex-col" id="me">
       <NavBar />
-      <div className="about | flex gap-4 p-4 px-3 w-full mt-[3.3rem]">
+      <div className="about | relative flex gap-4 p-4 px-3 w-full mt-[3.3rem]">
         <About />
       </div>
       <h1 className="text-2xl mx-4 p-2 pb-5 text-[Montserrat] font-black"  id="projects">
         <Explore /> My Projects
       </h1>
-      <div className="Projects | w-full px-5">
+      <div className="Projects | relative w-full px-5">
         <Works />
       </div>
     </div>

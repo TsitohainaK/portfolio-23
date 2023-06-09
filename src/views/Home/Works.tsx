@@ -1,6 +1,10 @@
 import React from "react";
 import Work from "./Work";
-import { Circle } from "@mui/icons-material";
+import {
+  Circle,
+  KeyboardArrowDown,
+  KeyboardArrowUp,
+} from "@mui/icons-material";
 
 type Props = {};
 
@@ -9,8 +13,10 @@ function Works({}: Props) {
     {
       name: "2023 portfolio",
       imgSrc: "/portfolio-desk.png",
-      desc: `This portfolio was made with ReactTs, vite and the framework Tailwind css. And also a little cup of coffe.
-This is also a progressive web app, so it can work offline if needed.`,
+      desc: `This portfolio was made with ReactTs, vite and the framework Tailwind css. This is also a progressive web app, so it can work offline if needed.
+
+And a little cup of coffe ☕.
+`,
       links: {
         project: "https://github.com/TsitoUw/portfolio-23",
         deployment: "https://TsitoUW.vercel.app",
@@ -30,7 +36,6 @@ Exploring React, NodeJs and Typescript in depth.`,
         deployment: "https://musicc.vercel.app",
       },
       isLandscape: true,
-
     },
     {
       name: "Restaurant Management",
@@ -42,7 +47,6 @@ I was participating in the database study and mainly focusing on the backend, se
         deployment: "",
       },
       isLandscape: true,
-
     },
     {
       name: "Internship - Webmapping",
@@ -55,7 +59,6 @@ Also lets admins manage the entire applications and its contents.`,
       },
       status: "done",
       isLandscape: true,
-
     },
     {
       name: "2D Game Engine",
@@ -86,21 +89,24 @@ My first medium size app, with this project I learnt a lots of thing in the deve
   ];
   return (
     <>
-    <div className="w-max flex gap-2 rounded-md p-2 text-sm justify-center bg-[var(--content-bg)]">
+      <div className="w-max flex gap-2 rounded-md p-2 text-sm justify-center bg-[var(--content-bg)]">
         <p className="flex items-center gap-1">
           <span className="flex items-center  text-emerald-600">
             <Circle fontSize="small" />
-          </span> Done
+          </span>{" "}
+          Done
         </p>
         <p className="flex items-center gap-1">
           <span className="flex items-center  text-blue-400">
             <Circle fontSize="small" />
-          </span> On going
+          </span>{" "}
+          On going
         </p>
         <p className="flex items-center gap-1">
           <span className="flex items-center  text-orange-400">
             <Circle fontSize="small" />
-          </span> Need to be re-written
+          </span>{" "}
+          Need to be re-written
         </p>
       </div>
       <div className="w-full grid grid-flow-row grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-2">
@@ -108,7 +114,6 @@ My first medium size app, with this project I learnt a lots of thing in the deve
           return <Work project={projet} key={id} />;
         })}
       </div>
-      
     </>
   );
 }
