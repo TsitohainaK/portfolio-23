@@ -17,6 +17,7 @@ This is also a progressive web app, so it can work offline if needed.`,
       },
       isLandscape: true,
       status: "done",
+      isHere: true,
     },
     {
       name: "Musicc",

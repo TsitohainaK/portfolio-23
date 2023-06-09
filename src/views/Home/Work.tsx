@@ -19,6 +19,7 @@ interface IProject {
     deployment?: string;
   };
   isLandscape?: boolean;
+  isHere?: boolean;
 }
 
 function Work({ project }: { project: IProject }) {
@@ -77,7 +78,7 @@ function Work({ project }: { project: IProject }) {
             </div>
           )}
 
-          {project.links.deployment ? (
+          {project.links.deployment && !project.isHere ? (
             <a
               href={project.links.deployment}
               className=""
@@ -86,7 +87,7 @@ function Work({ project }: { project: IProject }) {
             >
               <RocketLaunch /> Visit
             </a>
-          ) : (
+          ) : project.isHere ? null : (
             <div className="text-neutral-400 hover:text-neutral-400 cursor-default">
               <RocketLaunch /> Visit
             </div>
