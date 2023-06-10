@@ -7,12 +7,12 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({ 
-      mode:'development',
+      mode:'production',
       minify:true,
       registerType: "autoUpdate",
       injectRegister: "auto",
       devOptions:{
-        enabled:true
+        enabled:false
       },
       includeAssets: ["/icon.png", "/icons/apple-icon-180.png"],
       manifest:{

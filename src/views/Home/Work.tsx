@@ -54,7 +54,7 @@ function Work({ project }: { project: IProject }) {
         <img
           src={project.imgSrc}
           alt="nnn"
-          className={`w-full rounded-lg h-56 bg-[var(--content-bg-emphasis)] 
+          className={`w-full rounded-lg h-64 md:h-56 bg-[var(--content-bg-emphasis)] 
             ${project.isLandscape ? "object-cover" : "object-contain"}`}
           decoding="async"
           loading="lazy"

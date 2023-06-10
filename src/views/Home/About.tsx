@@ -30,14 +30,14 @@ function About({}: Props) {
   return (
     <>
       <div className="flex w-full md:w-8/12 absolute md:relative left-0 px-3 md:px-1 h-full max-h-[calc(100vh-6rem)]">
-        <section className="flex w-full justify-between md:justify-around items-start rounded-xl flex-col drop-shadow-md shadow-md bg-slate-900 bg-opacity-40 md:bg-[var(--content-bg)] md:bg-opacity-100 whitespace-pre-wrap h-full md:min-h-[calc(100vh-6rem)]">
-          <div className="who | flex flex-col gap-4 text-white md:text-[var(--root-color)] px-4 pt-5">
+        <section className="flex w-full z-40 justify-between md:justify-around items-start rounded-xl flex-col drop-shadow-md shadow-md bg-slate-900 bg-opacity-50 md:bg-[var(--content-bg)] md:bg-opacity-100 whitespace-pre-wrap h-full md:min-h-[calc(100vh-6rem)]">
+          <div className="who | flex flex-col gap-4 text-white md:text-[var(--root-color)] px-4 pt-12 md:pt-5">
             <div className="relative text-3xl md:text-4xl lg:text-5xl font-[Montserrat,Roboto,sans-serif] font-black stroke-2 md:pl-6">
               <p className="absolute text-sm -top-5 font-thin text-neutral-400 pl-1">
                 about me
               </p>
               Hey, I'm{" "}
-              <span className="myname | text-[var(--color-main)] italic hover:animate-pulse">
+              <span className="myname | text-[var(--color-main)] italic">
                 Tsitohaina
               </span>
               ,
@@ -120,7 +120,7 @@ function About({}: Props) {
           </div>
         </section>
       </div>
-      <section className="flex w-full md:w-4/12 shadow-md max-h-[calc(100vh-6rem)] min-h-[calc(100vh-6rem)] overflow-hidden rounded-xl drop-shadow-md">
+      <section className="flex w-full z-30 md:w-4/12 shadow-md max-h-[calc(100vh-6rem)] min-h-[calc(100vh-6rem)] overflow-hidden rounded-xl drop-shadow-md">
         <img
           src={me}
           alt="me hah"
@@ -131,7 +131,7 @@ function About({}: Props) {
         />
       </section>
       <div className="absolute -bottom-2 left-[50%] z-50  animate-bounce">
-        <a href="#projects" className="p-2 duration-100 hover:drop-shadow-lg hover:shadow-md hover:bg-[var(--content-bg-emphasis)] rounded-full">
+        <a href="#projects" className="p-2 ">
           <KeyboardArrowDown />
         </a>
       </div>

@@ -109,7 +109,7 @@ My first medium size app, with this project I learnt a lots of thing in the deve
           Need to be re-written
         </p>
       </div>
-      <div className="w-full grid grid-flow-row grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-2">
+      <div className="w-full grid grid-flow-row grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-4 py-2">
         {workMocks.map((projet, id) => {
           return <Work project={projet} key={id} />;
         })}
