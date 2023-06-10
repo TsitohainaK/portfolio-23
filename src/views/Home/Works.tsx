@@ -33,7 +33,7 @@ I aimed to achieve implementing my own media streaming and uploading methods, an
 Exploring React, NodeJs and Typescript in depth.`,
       links: {
         project: "https://github.com/TsitoUw/musicc-front",
-        deployment: "https://musicc.vercel.app",
+        deployment: "https://musicc-front.vercel.app",
       },
       isLandscape: true,
     },
