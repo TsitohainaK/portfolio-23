@@ -84,7 +84,7 @@ function About({}: Props) {
               </div>
               <div className="bg-[var(--root-color)] p-[0.65rem] rounded-full flex items-center justify-center">
                 <a
-                  href="http://linkedin.com/user/tsitohaina-rakotoarimanana"
+                  href="http://linkedin.com/in/tsitohaina-rakotoarimanana"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[var(--root-bg)] hover:text-[var(--root-bg)]"
