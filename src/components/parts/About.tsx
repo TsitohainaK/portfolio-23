@@ -1,5 +1,4 @@
 import me from "../../assets/me-lol.jpg";
-import cv from "../../assets/CV_REACT_NODE_Tsitohaina_RAKOTOARIMANANA.pdf";
 import {
   FacebookRounded,
   FileDownloadOutlined,
@@ -101,7 +100,7 @@ function About() {
                 title="Download my resume"
               >
                 <a
-                  href={cv}
+                  href='/CV_REACT_NODE_Tsitohaina_RAKOTOARIMANANA.pdf'
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[var(--root-bg)] hover:text-[var(--root-bg)]"
