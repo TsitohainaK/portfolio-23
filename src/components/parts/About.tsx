@@ -100,7 +100,8 @@ function About() {
                 title="Download my resume"
               >
                 <a
-                  href='/CV_REACT_NODE_Tsitohaina_RAKOTOARIMANANA.pdf'
+                  href='CV_REACT_NODE_Tsitohaina_RAKOTOARIMANANA.pdf'
+                  download
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[var(--root-bg)] hover:text-[var(--root-bg)]"
