@@ -99,7 +99,7 @@
   /* --link-hover: rgb(52 211 153); */
   /* --link-active: rgb(16 185 129); */
 
-  --root-bg: #2f2f2f;
+  --root-bg: rgb(19, 27, 40);
   --root-color: #efefef;
 
   --content-bg: rgba(30, 41, 59);

@@ -30,6 +30,9 @@ const NavBar = () => {
           <div className="works">
             <a href="#projects">projects</a>
           </div>
+          <div className="works">
+            <a href="#skills">skills</a>
+          </div>
           <div className="switcher">
             <button
               onClick={() => toogleTheme(setCurrentTheme)}
