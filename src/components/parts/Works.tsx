@@ -7,9 +7,7 @@ import nestangular from "../../assets/nestangular.webp";
 import portfolio from "../../assets/portfolio-desk.png";
 import sma from "../../assets/sma.png";
 
-type Props = {};
-
-function Works({}: Props) {
+function Works() {
   const workMocks = [
     {
       name: "2023 portfolio",

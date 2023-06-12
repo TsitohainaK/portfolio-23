@@ -8,7 +8,6 @@ import {
   LinkedIn,
 } from "@mui/icons-material";
 
-type Props = {};
 
 function addEmailToClipBoard() {
   let mock: HTMLTextAreaElement | null = document.createElement("textarea");
@@ -21,7 +20,7 @@ function addEmailToClipBoard() {
   document.execCommand("copy");
   mock = null;
 }
-function About({}: Props) {
+function About() {
   return (
     <>
       <div className="flex w-full md:w-8/12 absolute md:relative left-0 px-3 md:px-1 h-full max-h-[calc(100vh-6rem)]">
