@@ -27,7 +27,7 @@ function Home({}: Props) {
       >
         <AutoFixHigh /> Skills
       </h1>
-      <div className="tech flex w-full gap-1 items-center justify-center py-2 pb-4">
+      <div className="tech flex w-full gap-1 items-center justify-center py-2 pb-4" id="skills">
         <img
           src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
           alt="git"
