@@ -2,9 +2,6 @@ import {
   Circle,
   Close,
   Code,
-  Description,
-  Mouse,
-  Rocket,
   RocketLaunch,
 } from "@mui/icons-material";
 import { useEffect, useState } from "react";

@@ -1,10 +1,11 @@
-import React from "react";
 import Work from "./Work";
-import {
-  Circle,
-  KeyboardArrowDown,
-  KeyboardArrowUp,
-} from "@mui/icons-material";
+import { Circle } from "@mui/icons-material";
+import gameEngine from "../../assets/engine.jpeg";
+import internship from "../../assets/internship.png";
+import musicc from "../../assets/musicc.png";
+import nestangular from "../../assets/nestangular.webp";
+import portfolio from "../../assets/portfolio-desk.png";
+import sma from "../../assets/sma.png";
 
 type Props = {};
 
@@ -12,7 +13,7 @@ function Works({}: Props) {
   const workMocks = [
     {
       name: "2023 portfolio",
-      imgSrc: "/portfolio-desk.png",
+      imgSrc: portfolio,
       desc: `This portfolio was made with ReactTs, vite and the framework Tailwind css. This is also a progressive web app, so it can work offline if needed.
 
 And a little cup of coffe ☕.
@@ -27,7 +28,7 @@ And a little cup of coffe ☕.
     },
     {
       name: "Musicc",
-      imgSrc: "/musicc.png",
+      imgSrc: musicc,
       desc: `Fullstack Music streaming progressive web app made with ReactTs, Tailwind css, NodeTs , ExpressJs and Postgresql. 
 I aimed to achieve implementing my own media streaming and uploading methods, and also handling advanced authentication.
 Exploring React, NodeJs and Typescript in depth.`,
@@ -39,7 +40,7 @@ Exploring React, NodeJs and Typescript in depth.`,
     },
     {
       name: "Restaurant Management",
-      imgSrc: "/nestangular.webp",
+      imgSrc: nestangular ,
       desc: `Collaborating for building of a restaurant management, this is a web app build with Angular, NestJs and Postgresql.
 I was participating in the database study and mainly focusing on the backend, setting up a RESTful api for the front end.`,
       links: {
@@ -50,7 +51,7 @@ I was participating in the database study and mainly focusing on the backend, se
     },
     {
       name: "Internship - Webmapping",
-      imgSrc: "/internship.png",
+      imgSrc: internship,
       desc: `Using Vue, Laravel, Postgresql and Geoserver. During six (6) months we built a large application that can offer to user an interactive and detailled map of Madagascar.
 Also lets admins manage the entire applications and its contents.`,
       links: {
@@ -62,7 +63,7 @@ Also lets admins manage the entire applications and its contents.`,
     },
     {
       name: "2D Game Engine",
-      imgSrc: "/engine.jpeg",
+      imgSrc: gameEngine,
       desc: `This is a 2D game framework built with TypeScript, following the Entity-Component-System (ECS) architecture and utilizing the Matter.js physics engine. 
 The framework enables the development of 2D games with realistic physics interactions.
 
@@ -76,7 +77,7 @@ Now I'm interested in writting one.`,
     },
     {
       name: "Mini Social Network",
-      imgSrc: "/sma.png",
+      imgSrc: sma,
       desc: `Fullstack social network app made with ReactJs, Tailwind css, Nodejs , ExpressJs, Socket.io and MongoDb.
 My first medium size app, with this project I learnt a lots of thing in the developpement of a web app, from setting up the project, creating RESTful api, handling realtime event, to the deployement.`,
       links: {

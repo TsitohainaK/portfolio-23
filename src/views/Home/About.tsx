@@ -1,14 +1,9 @@
 import me from "../../assets/me-lol.jpg";
+import cv from "../../assets/CV_REACT_NODE_Tsitohaina_RAKOTOARIMANANA.pdf";
 import {
-  ArrowCircleDownRounded,
-  ArrowDownward,
-  Download,
-  DownloadOutlined,
   FacebookRounded,
-  FileDownload,
   FileDownloadOutlined,
   GitHub,
-  Instagram,
   KeyboardArrowDown,
   LinkedIn,
 } from "@mui/icons-material";
@@ -107,7 +102,7 @@ function About({}: Props) {
                 title="Download my resume"
               >
                 <a
-                  href="/CV-FullStack-JS-Tsitohaina Kantonirina_RAKOTOARIMANANA.pdf"
+                  href={cv}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[var(--root-bg)] hover:text-[var(--root-bg)]"
