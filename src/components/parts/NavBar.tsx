@@ -23,15 +23,15 @@ const NavBar = () => {
             Tsitohaina<span className="hidden md:block ml-2">Kantonirina</span>
           </div>
         </div>
-        <div className="link flex items-center gap-3">
+        <div className="link flex items-center gap-3 ">
           <div className="about">
-            <a href="#me">about</a>
+            <a href="#me" className="opacity-50 hover:opacity-100">about</a>
           </div>
           <div className="works">
-            <a href="#projects">projects</a>
+            <a href="#projects" className="opacity-50 hover:opacity-100">projects</a>
           </div>
           <div className="works">
-            <a href="#skills">skills</a>
+            <a href="#skills" className="opacity-50 hover:opacity-100">skills</a>
           </div>
           <div className="switcher">
             <button
