@@ -45,4 +45,4 @@ The portfolio is open-source and available under the [MIT License](LICENSE). Fee
 
 ## Contact
 
-If you have any questions or feedback, please feel free to reach out to me at [your-email@example.com](mailto:your-email@example.com).
+If you have any questions or feedback, please feel free to reach out to me at [tsitohaina.pro@gmail.com](mailto:tsitohaina.pro@example.com).
