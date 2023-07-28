@@ -11,7 +11,6 @@
   -moz-osx-font-smoothing: grayscale;
   transition: color ease-out 0.2s;
   letter-spacing: 0.04rem;
-
 }
 
 :root {
@@ -206,23 +205,83 @@ a.active {
 }
 
 @-webkit-keyframes flicker {
-  0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+  0%,
+  19.999%,
+  22%,
+  62.999%,
+  64%,
+  64.999%,
+  70%,
+  100% {
     opacity: 0.99;
-    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.4), 1px -1px 0 rgba(255, 255, 255, 0.4), -1px 1px 0 rgba(255, 255, 255, 0.4), 1px 1px 0 rgba(255, 255, 255, 0.4), 0 -2px 8px, 0 0 2px, 0 0 5px var(--color-main), 0 0 15px #ff4444, 0 0 2px var(--color-main), 0 2px 3px #000;
+    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.4), 1px -1px 0 rgba(255, 255, 255, 0.4),
+      -1px 1px 0 rgba(255, 255, 255, 0.4), 1px 1px 0 rgba(255, 255, 255, 0.4), 0 -2px 8px, 0 0 2px,
+      0 0 5px var(--color-main), 0 0 15px #ff4444, 0 0 2px var(--color-main), 0 2px 3px #000;
   }
-  20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+  20%,
+  21.999%,
+  63%,
+  63.999%,
+  65%,
+  69.999% {
     opacity: 0.4;
     text-shadow: none;
   }
 }
 
 @keyframes flicker {
-  0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+  0%,
+  19.999%,
+  22%,
+  62.999%,
+  64%,
+  64.999%,
+  70%,
+  100% {
     opacity: 0.99;
-    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.4), 1px -1px 0 rgba(255, 255, 255, 0.4), -1px 1px 0 rgba(255, 255, 255, 0.4), 1px 1px 0 rgba(255, 255, 255, 0.4), 0 -2px 8px, 0 0 2px, 0 0 5px var(--color-main), 0 0 15px #ff4444, 0 0 2px var(--color-main), 0 2px 3px #000;
+    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.4), 1px -1px 0 rgba(255, 255, 255, 0.4),
+      -1px 1px 0 rgba(255, 255, 255, 0.4), 1px 1px 0 rgba(255, 255, 255, 0.4), 0 -2px 8px, 0 0 2px,
+      0 0 5px var(--color-main), 0 0 15px #ff4444, 0 0 2px var(--color-main), 0 2px 3px #000;
   }
-  20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+  20%,
+  21.999%,
+  63%,
+  63.999%,
+  65%,
+  69.999% {
     opacity: 0.4;
     text-shadow: none;
+  }
+}
+
+.not-show {
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+  opacity: 0;
+}
+
+.show {
+  filter: blur(0);
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.not-show-project {
+  filter: blur(5px);
+  transform: translateY(50%);
+  transition: all 1s;
+  opacity: 0;
+}
+
+.show-project {
+  filter: blur(0);
+  transform: translateY(0);
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion) {
+  .not-show {
+    transition: none;
   }
 }

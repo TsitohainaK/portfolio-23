@@ -30,9 +30,26 @@ function Work({ project }: { project: IProject }) {
       }, 500);
     // else setTimeout(() => {setS}, 10);
   }, [showHide]);
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) entry.target.classList.add("show-project");
+          else entry.target.classList.remove("show-project");
+        });
+      },{
+        threshold: 0.2,
+      }
+    );
+    const hiddenElements = document.querySelectorAll(".not-show-project");
 
+    hiddenElements.forEach((hiddenElement) => {
+      observer.observe(hiddenElement);
+    });
+  }, []);
   return (
-    <div className="relative w-full p-2 flex flex-col bg-[var(--content-bg)] rounded-md h-full overflow-hidden shadow-lg drop-shadow-md">
+    
+    <div className="relative w-full p-2 flex flex-col bg-[var(--content-bg)] rounded-md h-full overflow-hidden shadow-lg drop-shadow-md not-show-project">
       <div className="name | text-[Montserrat] text-lg p-2 font-semibold flex items-center gap-1">
         <span
           className={`flex items-center ${

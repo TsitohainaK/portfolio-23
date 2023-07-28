@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import me from "../../assets/me-lol.jpg";
 import {
   FacebookRounded,
@@ -20,9 +21,24 @@ function addEmailToClipBoard() {
   mock = null;
 }
 function About() {
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) entry.target.classList.add("show");
+          else entry.target.classList.remove("show");
+        });
+      }
+    );
+    const hiddenElements = document.querySelectorAll(".not-show");
+
+    hiddenElements.forEach((hiddenElement) => {
+      observer.observe(hiddenElement);
+    });
+  }, []);
   return (
     <>
-      <div className="flex w-full md:w-8/12 absolute md:relative left-0 px-3 md:px-1 h-full max-h-[calc(100vh-6rem)]">
+      <div className="flex w-full md:w-8/12 absolute md:relative left-0 px-3 md:px-1 h-full max-h-[calc(100vh-6rem)] overflow-hidden">
         <section className="flex w-full z-40 justify-between md:justify-around items-start rounded-xl flex-col drop-shadow-md shadow-md bg-slate-900 bg-opacity-50 md:bg-[var(--content-bg)] md:bg-opacity-100 whitespace-pre-wrap h-full md:min-h-[calc(100vh-6rem)]">
           <div className="who | flex flex-col gap-4 text-white md:text-[var(--root-color)] px-4 pt-12 md:pt-5">
             <div className="relative text-3xl md:text-4xl lg:text-5xl font-[Montserrat,Roboto,sans-serif] font-black stroke-2 md:pl-6">
@@ -36,21 +52,21 @@ function About() {
               ,
               <br />A javascript developper.
             </div>
-            <div className="md:px-4 animate-blur-in">
+            <div className="md:px-4 animate-blur-in hidden md:block">
               As a developper, I thrive on the challenge of solving complex
               problems and enjoy collaborating with teams to deliver
               high-quality applications that exceed expectations.
             </div>
           </div>
-          <div className="contact | p-4 animate-blur-in">
-            <div className="complement | p-2 pb-5 text-white md:md:text-[var(--root-color)] md:pl-4">
+          <div className="contact | p-4 ">
+            <div className="complement | pb-5 text-white md:md:text-[var(--root-color)] md:pl-4 animate-blur-in">
               Javascript, Typescript are my go-to languages, I use ReactJs as
-              front-end framework, NodeJs and Express or NestJs for the backend.
+              front-end framework, ExpressJs or NestJs for the backend.
               Also I'm an IT student at "Institut Superieur Polytechnique de
               Madagascar"
             </div>
             <div
-              className=" w-full flex items-center justify-start gap-2 md:gap-3 md:pl-4"
+              className=" w-full flex items-center justify-start gap-2 md:gap-3 md:pl-4 not-show"
               title="tsitohaina.pro@gmail.com"
             >
               <a
@@ -59,10 +75,10 @@ function About() {
                 className="z-10"
               >
                 <button
-                  className="bg-[var(--color-main)] p-3 text-white font-bold rounded-full px-4 text-sm"
+                  className="bg-[var(--color-main)] p-3 flex text-white font-bold rounded-full px-4 text-sm"
                   onClick={() => addEmailToClipBoard()}
                 >
-                  CONTACT ME
+                  CONTACT<span className="hidden md:block"> ME</span>
                 </button>
               </a>
               <div className="bg-[var(--root-color)] p-[0.65rem] rounded-full flex items-center justify-center">
@@ -100,7 +116,7 @@ function About() {
                 title="Download my resume"
               >
                 <a
-                  href='CV_REACT_NODE_Tsitohaina_RAKOTOARIMANANA.pdf'
+                  href='CV-JAVASCRIPT-TSITOHAINA-RAKOTOARIMANANA.pdf'
                   download
                   target="_blank"
                   rel="noopener noreferrer"
@@ -114,7 +130,7 @@ function About() {
           </div>
         </section>
       </div>
-      <section className="flex w-full z-30 md:w-4/12 shadow-md max-h-[calc(100vh-6rem)] min-h-[calc(100vh-6rem)] overflow-hidden rounded-xl drop-shadow-md">
+      <section className=" flex w-full z-30 md:w-4/12 shadow-md max-h-[calc(100vh-6rem)] min-h-[calc(100vh-6rem)] overflow-hidden rounded-xl drop-shadow-md">
         <img
           src={me}
           alt="me hah"

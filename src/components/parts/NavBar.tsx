@@ -24,13 +24,13 @@ const NavBar = () => {
           </div>
         </div>
         <div className="link flex items-center gap-3 ">
-          <div className="about">
+          <div className="about hidden md:block">
             <a href="#me" className="opacity-50 hover:opacity-100">about</a>
           </div>
-          <div className="works">
+          <div className="works hidden md:block">
             <a href="#projects" className="opacity-50 hover:opacity-100">projects</a>
           </div>
-          <div className="works">
+          <div className="works hidden md:block">
             <a href="#skills" className="opacity-50 hover:opacity-100">skills</a>
           </div>
           <div className="switcher">

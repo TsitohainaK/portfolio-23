@@ -5,7 +5,7 @@ import internship from "../../assets/internship.png";
 import musicc from "../../assets/musicc.png";
 import nestangular from "../../assets/nestangular.webp";
 import portfolio from "../../assets/portfolio-desk.png";
-import sma from "../../assets/sma.png";
+import finder from "../../assets/job-mobi.png";
 
 function Works() {
   const workMocks = [
@@ -25,6 +25,32 @@ And a little cup of coffe ☕.
       isHere: true,
     },
     {
+      name: "Restaurant Management",
+      imgSrc: nestangular,
+      desc: `Collaborating for building of a restaurant management, this is a web app build with Angular, NestJs and Postgresql.
+I was participating in the database study and mainly focusing on the backend, setting up a RESTful api for the front end.`,
+      links: {
+        project: "https://github.com/TsitoUw/nest-restau",
+        deployment: "",
+      },
+      status: "done",
+      isLandscape: true,
+    },
+    {
+      name: "Finder",
+      imgSrc: finder,
+      desc: `Fullstack job finder app made with ReactJs, Tailwind css and Pocketbase.
+Practicing mobile first developement while learning pocketbase. I challenged myself to finnish an app in 6 hours and this is the result.
+I've done the signup, signin page; home page were popular companies and recent jobs posts are shown; a detailed view of a job and a profile for companies;
+and a search page to search for job or company.`,
+      links: {
+        project: "https://github.com/TsitoUw/job-finder",
+        deployment: "",
+      },
+      status: "done",
+      isLandscape: false,
+    },
+    {
       name: "Musicc",
       imgSrc: musicc,
       desc: `Fullstack Music streaming progressive web app made with ReactTs, Tailwind css, NodeTs , ExpressJs and Postgresql. 
@@ -33,17 +59,6 @@ Exploring React, NodeJs and Typescript in depth.`,
       links: {
         project: "https://github.com/TsitoUw/musicc-front",
         deployment: "https://musicc-front.vercel.app",
-      },
-      isLandscape: true,
-    },
-    {
-      name: "Restaurant Management",
-      imgSrc: nestangular ,
-      desc: `Collaborating for building of a restaurant management, this is a web app build with Angular, NestJs and Postgresql.
-I was participating in the database study and mainly focusing on the backend, setting up a RESTful api for the front end.`,
-      links: {
-        project: "https://github.com/TsitoUw/nest-restau",
-        deployment: "",
       },
       isLandscape: true,
     },
@@ -73,18 +88,6 @@ Now I'm interested in writting one.`,
       },
       isLandscape: true,
     },
-    {
-      name: "Mini Social Network",
-      imgSrc: sma,
-      desc: `Fullstack social network app made with ReactJs, Tailwind css, Nodejs , ExpressJs, Socket.io and MongoDb.
-My first medium size app, with this project I learnt a lots of thing in the developpement of a web app, from setting up the project, creating RESTful api, handling realtime event, to the deployement.`,
-      links: {
-        project: "https://github.com/TsitoUw/sma-01-front",
-        deployment: "https://sma-01-front.vercel.app/register",
-      },
-      status: "rewrite",
-      isLandscape: true,
-    },
   ];
   return (
     <>
@@ -101,12 +104,12 @@ My first medium size app, with this project I learnt a lots of thing in the deve
           </span>{" "}
           On going
         </p>
-        <p className="flex items-center gap-1">
+        {/* <p className="flex items-center gap-1">
           <span className="flex items-center  text-orange-400">
             <Circle fontSize="small" />
           </span>{" "}
           Need to be re-written
-        </p>
+        </p> */}
       </div>
       <div className="w-full grid grid-flow-row grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-4 py-2">
         {workMocks.map((projet, id) => {
