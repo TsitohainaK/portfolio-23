@@ -50,10 +50,10 @@ function About() {
                 Tsitohaina
               </span>
               ,
-              <br />A javascript developper.
+              <br />A javascript developer.
             </div>
             <div className="md:px-4 animate-blur-in hidden md:block">
-              As a developper, I thrive on the challenge of solving complex
+              As a developer, I thrive on the challenge of solving complex
               problems and enjoy collaborating with teams to deliver
               high-quality applications that exceed expectations.
             </div>
